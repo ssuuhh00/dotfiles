@@ -58,4 +58,4 @@ weekly   ────────────   2%  ⟳ apr 10, 9:00pm
 - 데이터 출처: 별도 API 호출이 아니라 Claude Code가 statusline 새로고침마다 stdin으로 JSON을 준다. 쓰는 필드는 `cwd`, `model.display_name`, `context_window.context_window_size`, `context_window.current_usage.*`, `rate_limits.five_hour.*`, `rate_limits.seven_day.*`. 전체 구조와 변경 이력은 [SCHEMA.md](SCHEMA.md).
 - Windows 버전 주의: Claude Code가 나중에 `context_window.used_percentage`를 추가하면서, JSON 전체에서 `used_percentage`를 순서대로 긁던 방식이 깨졌다 (첫 번째 값이 레이트 리밋이 아니게 됨). 지금 버전은 `rate_limits` 객체를 먼저 잘라낸 뒤 그 안에서 읽는다. 고칠 때 이 구조를 유지할 것.
 - 셸 스크립트는 LF 줄바꿈이어야 한다 (CRLF면 bash가 깨짐). 리포 루트 `.gitattributes`가 `*.sh`를 LF로 고정한다.
-- 원래 별도 리포(https://github.com/ssuuhh00/claude-statusline)였던 것을 2026-09-22에 여기로 옮겼다.
+- 원래 별도 리포(claude-statusline)였던 것을 2026-09-22에 여기로 옮기고 옛 리포는 지웠다.
