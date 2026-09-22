@@ -15,16 +15,12 @@
 | 파일 | Windows | Ubuntu |
 |---|---|---|
 | `settings.json` | `C:\Users\<사용자>\.claude\settings.json` | `~/.claude/settings.json` |
-| statusline 스크립트 | `C:\Users\<사용자>\.claude\status-line.sh` | `~/.claude/status-line.sh` |
+| `statusline/statusline-*.sh` (OS에 맞는 것 하나) | `C:\Users\<사용자>\.claude\status-line.sh` | `~/.claude/status-line.sh` |
 
 ## 적용
 
 1. `settings.json`을 위 경로에 복사한다.
-2. statusline은 별도 리포에서 가져온다: https://github.com/ssuuhh00/claude-statusline
-   - Windows: `statusline-windows.sh` → `~/.claude/status-line.sh`
-   - Ubuntu: `statusline-ubuntu.sh` → `~/.claude/status-line.sh`
-   - `chmod +x ~/.claude/status-line.sh`
-   - 파일 이름은 반드시 `status-line.sh`. 이 `settings.json`의 `statusLine.command`가 그 이름을 부른다 (statusline 리포 README는 `statusline-command.sh`로 안내하지만 여기서는 이 이름을 쓴다).
+2. statusline은 `statusline/` 폴더의 README를 따라 자기 OS 스크립트를 `~/.claude/status-line.sh`로 복사하고 실행 권한을 준다. `settings.json`의 `statusLine.command`가 이 이름을 부른다.
 3. `claude`를 실행해 하단에 statusline 3줄이 뜨는지, `/theme`이 dark인지 확인한다.
 
 ## 메모
@@ -34,3 +30,4 @@
 - Windows 전용: `permissions.allow`의 `Bash(curl.exe:*)`. Ubuntu에서는 빼도 된다.
 - `enabledPlugins`의 frontend-design 플러그인은 새 컴에서 다시 설치해야 할 수 있다.
 - 전역 지시문 `~/.claude/CLAUDE.md`는 현재 비어 있어 올리지 않았다.
+- statusline 스크립트의 동작 원리와 스키마는 `statusline/README.md`, `statusline/SCHEMA.md`에 있다.

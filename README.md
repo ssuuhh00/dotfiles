@@ -8,7 +8,7 @@
 | 폴더 | 무엇 | 상태 |
 |---|---|---|
 | `vscode/` | VS Code 설정(settings.json), 확장 목록 | 사용 중 (Windows에서 뽑음) |
-| `claude-code/` | Claude Code CLI 설정(settings.json), statusline 연결 | 사용 중 |
+| `claude-code/` | Claude Code CLI 설정(settings.json), statusline 스크립트(`statusline/`, Windows/Ubuntu/macOS) | 사용 중 |
 | `git/` | git 전역 설정(.gitconfig) | 사용 중 |
 
 추가 예정: `terminal/` (Windows Terminal, bash), `chrome/` (확장 목록), `os/windows/`, `os/ubuntu/` (패키지 목록, 폰트, 한글 입력기).
@@ -27,6 +27,7 @@
 - 비밀값(토큰, 비밀번호, 로그인 정보)은 절대 올리지 않는다. `~/.claude.json`, `~/.claude/.credentials.json`, `~/.git-credentials`는 이 리포 대상이 아니다.
 - 그대로 복사해서 쓸 수 있는 원본 파일을 올린다. 설명만 있고 파일이 없는 항목은 만들지 않는다.
 - 설정을 바꾸면 이 리포도 같이 갱신하고, 폴더 README의 "메모"에 이유를 한 줄 남긴다.
+- 셸 스크립트(`*.sh`)는 LF 줄바꿈. 루트 `.gitattributes`가 강제한다. 하위 프로그램 폴더(예: `claude-code/statusline/`)도 같은 4단락 README를 갖는다.
 
 ## 폴더 README 형식
 
