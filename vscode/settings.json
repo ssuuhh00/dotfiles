@@ -1,0 +1,57 @@
+{
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "terminal.explorerKind": "both",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "notebook.defaultFormatter": "esbenp.prettier-vscode",
+  "security.workspace.trust.untrustedFiles": "open",
+  "explorer.confirmDelete": false,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "python-envs.defaultEnvManager": "ms-python.python:conda",
+  "python-envs.defaultPackageManager": "ms-python.python:conda",
+  "python.defaultInterpreterPath": "c:\\Users\\lsh\\anaconda3",
+  "notebook.lineNumbers": "on",
+  "workbench.startupEditor": "none",
+  "git.enableSmartCommit": true,
+  "update.showReleaseNotes": false,
+  "editor.wordWrap": "on",
+  "explorer.confirmPasteNative": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.confirmSync": false,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.colorTheme": "Light 2026",
+  "workbench.editorAssociations": {
+    "*.md": "vscode.markdown.preview.editor"
+  },
+  "workbench.colorCustomizations": {
+    "[Light 2026]": {
+      "terminal.background": "#191A1B",
+      "terminal.foreground": "#CCCCCC",
+      "terminal.selectionBackground": "#3994BC33",
+      "terminal.inactiveSelectionBackground": "#3A3D41",
+      "terminalCursor.foreground": "#bfbfbf",
+      "terminalCursor.background": "#191A1B",
+      "terminal.ansiBlack": "#000000",
+      "terminal.ansiRed": "#cd3131",
+      "terminal.ansiGreen": "#0DBC79",
+      "terminal.ansiYellow": "#e5e510",
+      "terminal.ansiBlue": "#2472c8",
+      "terminal.ansiMagenta": "#bc3fbc",
+      "terminal.ansiCyan": "#11a8cd",
+      "terminal.ansiWhite": "#e5e5e5",
+      "terminal.ansiBrightBlack": "#666666",
+      "terminal.ansiBrightRed": "#f14c4c",
+      "terminal.ansiBrightGreen": "#23d18b",
+      "terminal.ansiBrightYellow": "#f5f543",
+      "terminal.ansiBrightBlue": "#3b8eea",
+      "terminal.ansiBrightMagenta": "#d670d6",
+      "terminal.ansiBrightCyan": "#29b8db",
+      "terminal.ansiBrightWhite": "#e5e5e5"
+    }
+  }
+}
